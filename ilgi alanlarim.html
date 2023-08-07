@@ -1,31 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    «meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initiat-scale-1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>İlgi Alanlarım</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="Web Teknolojileri" content="Web Teknolojileri">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="index-body">
+
+    <div class="menu">
+        <ul>
+            <li class="active"><a href="index.html">Hakkımda</a></li>
+            <li class="active"><a href="ozgecmis.html">Özgeçmiş</a></li>
+            <li class="active"><a href="sehrim.html">Şehrim</a></li>
+            <li class="active"><a href="mirasimiz.html">Mirasımız</a></li>
+            <li class="active"><a href="ilgi alanlarim.html">İlgi Alanlarım</a></li>
+            <li class="active"><a href="iletisim.html">İletişim</a></li>
+            <li class="active"><a href="giris.html">Giriş Yap</a></li>
+        </ul>
+    </div>
+
+    <style>
+        .menu {
+            font-family: "raleway", sans-serif;
+        }
+    </style>
+
+    <style>
+        .baslik {
+            font-family: "raleway", sans-serif;
+        }
+    </style>
+
     <div class="app">
         <div class="header">
             <h1>Hava Durumu</h1>
-            <input type="text" id="searchBar" placeholder="Sehir giriniz..">
+            <input type="text" id="searchBar" placeholder="Şehir giriniz..">
         </div>
-        ‹div class="content">
-        <div class="city" sIstanbul, TR> </div>
-        <div class="temp">15°C</div>
-        <div class="desc">Gunesli</div>
-        «div class="minmax">14°c / 19°c
+        <div class="content">
+            <div class="city">Istanbul, TR</div>
+            <div class="temp">15°C</div>
+            <div class="desc">Güneşli</div>
+            <div class="minmax">14°C / 19°C</div>
+        </div>
     </div>
-
-    </div>
-    </div>
-    <script src="main.js">
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>

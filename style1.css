@@ -1,0 +1,119 @@
+/* Styles for the slider images */
+.slider img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Styles for the main content */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Styles for heading level 2 */
+  h2 {
+    margin-top: 0;
+  }
+  
+  /* Styles for the places to visit section */
+  .places-to-visit {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .place {
+    width: 200px;
+    margin: 10px;
+  }
+  
+  .place img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Styles for the footer */
+  footer {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Reset styles for all elements */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles for the body */
+  body {
+    font-family: 'montserrat', sans-serif;
+    color: #fff;
+    background-image: url('resim/arka.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  /* Styles for the app container */
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, .7);
+    height: 100vh;
+  }
+  
+  /* Styles for the header section */
+  header {
+    padding: 50px 20px 30px 20px;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+    color: #fbb034;
+    text-shadow: 1px 3px rgba(0, 0, 0, .9);
+  }
+  
+  /* Styles for the header input */
+  header input {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #fbb034;
+    text-align: center;
+    font-size: 20px;
+    color: #f2f2f2;
+  }
+  
+  .city {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-shadow: 1px 3px rgba(0, 0, 0, 1.8);
+  }
+  
+  .temp {
+    font-size: 100px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 1px 5px rgba(0, 0, 0, 1);
+  }
+  
+  .desc {
+    font-size: 25px;
+    font-style: italic;
+    text-shadow: 1px 3px rgba(0, 0, 0, .8);
+    margin-bottom: 10px;
+  }
+  
+  .minmax {
+    font-size: 24px;
+    text-shadow: 1px 3px rgba(0, 0, 0, .8);
+  }
+  

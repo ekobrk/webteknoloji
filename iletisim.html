@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
+    <title> İletişim </title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Web Teknolojileri" content="Web Teknolojileri">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Şehrim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
+
+
 </head>
-<body>
+
+<body class="index-body">
+
     <div class="menu">
-    
-        <ul >
+
+        <ul>
             <li class="active"><a href="index.html"></i>Hakkımda</a></li>
             <li class="active"><a href="ozgecmis.html">Özgeçmiş</a></li>
             <li class="active"><a href="sehrim.html">Şehrim</a></li>
@@ -18,8 +26,117 @@
             <li class="active"><a href="iletisim.html">İletişim</a></li>
             <li class="active"><a href="giris.html">Giriş Yap</a></li>
         </ul>
-    
+
     </div>
-    
+
 </body>
+
+
+    
+
+<body>
+    <h1 class="baslik">İletişim Formu</h1>
+    <form action="/form-gonder" method="post">
+        <label for="ad">Adınız:</label>
+        <input type="text" id="ad" name="ad" required>
+
+        <label for="soyad">Soyadınız:</label>
+        <input type="text" id="soyad" name="soyad" required>
+
+        <label for="email">E-mail Adresiniz:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="cinsiyet">Cinsiyet:</label>
+        <select id="cinsiyet" name="cinsiyet" required>
+            <option value="" disabled selected>Lütfen bir üniversite seçin</option>
+            <option value="erkek">Erkek</option>
+            <option value="kadin">Kadın</option>
+            
+        </select>
+        
+        <label for="üniversite">Üniversite:</label>
+        <select id="üniversite" name="üniversite" required>
+            <option value="" disabled selected>Lütfen bir üniversite seçin</option>
+            <option value="destek">Sakarya Üniversitesi</option>
+            <option value="satis">Sakarya Uygulamalı Bilimler Üniversitesi</option>
+            
+        </select>
+
+
+        <label for="mesaj">Mesajınız:</label>
+        <textarea id="mesaj" name="mesaj" rows="4" required></textarea>
+
+        <label>
+            <input type="checkbox" id="onay" name="onay" required>
+            Bilgilerin doğruluğunu onaylıyorum
+        </label>
+
+        <button type="submit">Gönder</button>
+    </form>
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+
+</body>
+
+
+
 </html>

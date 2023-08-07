@@ -1,25 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Hakkımda</title>
+  <title> Web Teknolojileri </title>
+  <meta charset="UTF-8">
+  <meta name="Web Teknolojileri" content="Web Teknolojileri">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
+  <style>
+   
+   .menu {
+      font-family: "raleway", sans-serif;
+    }
+  
+
+  
+    .baslik {
+      font-family: "raleway", sans-serif;
+      color: #fff;
+    }
+  </style>
+
 </head>
-<body>
-    <div class="menu">
-    
-        <ul >
-            <li class="active"><a href="index.html"></i>Hakkımda</a></li>
-            <li class="active"><a href="ozgecmis.html">Özgeçmiş</a></li>
-            <li class="active"><a href="sehrim.html">Şehrim</a></li>
-            <li class="active"><a href="mirasimiz.html">Mirasımız</a></li>
-            <li class="active"><a href="ilgi alanlarim.html">İlgi Alanlarım</a></li>
-            <li class="active"><a href="iletisim.html">İletişim</a></li>
-            <li class="active"><a href="giris.html">Giriş Yap</a></li>
-        </ul>
-    
-    </div>
-    
+
+
+<body class="index-body">
+
+
+
+  <div class="menu">
+
+    <ul>
+      <li class="active"><a href="index.html"></i>Hakkımda</a></li>
+      <li class="active"><a href="ozgecmis.html">Özgeçmiş</a></li>
+      <li class="active"><a href="sehrim.html">Şehrim</a></li>
+      <li class="active"><a href="mirasimiz.html">Mirasımız</a></li>
+      <li class="active"><a href="ilgi alanlarim.html">İlgi Alanlarım</a></li>
+      <li class="active"><a href="iletisim.html">İletişim</a></li>
+      <li class="active"><a href="giris.html">Giriş Yap</a></li>
+    </ul>
+
+  </div>
+  <br>
+  <br>
+
+  <div>
+
+    <h1 style="text-align: center;" class="baslik">Ekrem Burak Akkaya Kimdir?</h1>
+    <hr>
+    <br>
+
+    <p style="text-align: center;" class="baslik">
+
+      <li>Merhaba. Ben Ekrem Burak Akkaya. Sivas'ta dünyaya geldim ve Sivas'ta yaşıyorum.</li>
+      <li>Sakarya Üniversitesi Bilgisayar Mühendisliği bölümünde okuyorum.</li>
+      <li>Aslen Ankaralıyım fakat Sivas'ı tanıtmak istedim.</li>
+      <li>Sivas tarihi ve doğal güzellikleri açısından gezilip görülmeye değer bir şehir.</li>
+
+    </p>
+
+    <br>
+  </div>
+
+  <div>
+    <h2 style="text-align: center;" class="baslik">Hobilerim</h2>
+    <hr>
+    <br>
+    <br>
+
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+    <body>
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="resim/bisiklet.jpg" style="width:100%">
+          <div class="text" style="color: black;">Bisiklet Sürmek</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="resim/g30.jpg" style="width:100%">
+          <div class="text" style="color: black;">Arabalar</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="resim/doga.jpg" style="width:100%">
+          <div class="text" style="color: black;">Doğa Yürüyüşü Yapmak</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="resim/kayak.jpg" style="width:100%">
+          <div class="text" style="color: black;">Kayak Yapmak</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="resim/yuzme.jpg" style="width:100%">
+          <div class="text" style="color: black;">Yüzmek</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+
+      </div>
+
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) { slideIndex = 1 }
+          if (n < 1) { slideIndex = slides.length }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+      </script>
+
+      
+
+    </body>
+
+  </div>
+
+  <br>
+  <br>
+
+
+  <h3 style="text-align: center;" class="baslik">
+    Neden Sakarya Üniversitesi?
+  </h3>
+  <br>
+
+  <div style="text-align: center;">
+
+    <iframe width="800" height="400" src="https://www.youtube.com/embed/mezgS4kd5_Y" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <br>
+
+
+
+  <br>
+  <footer>
+    <p style="text-align: center;">
+      Web Teknolojileri Proje 2023
+    </p>
+  </footer>
+
+
+
 </body>
+
+
 </html>
