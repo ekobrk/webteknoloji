@@ -1,0 +1,226 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+
+  font-family: 'Times New Roman', Times, serif;
+
+  background-image: url(resim/jk.jpg);
+ 
+
+}
+
+.menu {
+
+  background-color:coral;
+  text-align: center;
+}
+
+.menu ul {
+
+  display: inline-flex;
+  list-style: none;
+
+}
+
+.menu ul li {
+
+  width: 150px;
+  margin: 15px;
+  padding: 15x;
+
+}
+
+.menu ul li a {
+
+  
+  text-decoration: none;
+  color: #fff;
+
+}
+
+.active, .menu ul li:hover {
+  background: rgb(151, 134, 167);
+  border-radius: 10px;
+  
+}
+
+
+
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.slider-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+}
+
+.slider img {
+  width: 200px;
+  height: 150px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#content-container {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.slider-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+}
+
+.slider img {
+  width: 200px;
+  height: 150px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#content-container {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.slider {
+  width: 500px; /* Slider genişliğini ayarlayabilirsiniz */
+  overflow: hidden;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.places-to-visit {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.place {
+  width: 200px;
+  margin: 10px;
+}
+
+.place img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
